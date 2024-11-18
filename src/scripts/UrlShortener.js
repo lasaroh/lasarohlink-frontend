@@ -1,9 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("url");
   const shortenedUrl = document.getElementById("shortenedUrl");
+  const divUrlShortened = document.getElementById("divUrlShortened")
 
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
+    
+    divUrlShortened.classList.remove('invisible');
+    
     const data = new FormData(e.target);
 
     try {
