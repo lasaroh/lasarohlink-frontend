@@ -1,11 +1,11 @@
 ---
-
+const API_DOMAIN = import.meta.env.VITE_APIDOMAIN;
 ---
 
 <form
   id="url"
-  class="flex flex-col items-center mx-auto w-1/3"
-  action="https://localhost:7273/api/Url"
+  class="flex flex-col items-center mx-[10vw]"
+  action={`${API_DOMAIN}/api/Url`}
   method="post"
 >
   <input
@@ -20,7 +20,7 @@
     type="submit">Shorten URL</button
   >
 </form>
-<div id="divUrlShortened" class="flex mx-auto mt-8 w-1/3 invisible">
+<div id="divUrlShortened" class="flex mt-8 invisible mx-[10vw]">
   <input
     id="shortenedUrl"
     class="w-full border rounded p-2 border-blue-500"
@@ -50,7 +50,6 @@
   <span
     id="tooltip"
     class="absolute px-2 py-1 bg-gray-700 text-white text-sm rounded opacity-0 transition-opacity duration-300"
-  >Text copied to clipboard
+    >Text copied to clipboard
   </span>
-  <script src="/src/scripts/UrlShortener.js"></script>
 </div>
