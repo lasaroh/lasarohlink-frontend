@@ -29,7 +29,7 @@ Inside of your Astro project, you'll see the following folders and files:
 └── .env
 ```
 
-## Description of Folders and Files
+## 👉 Description of Folders and Files
 
 - **`public/`**: Contains static assets such as images or favicons. These files are served as-is and do not get processed by Astro.
 - **`src/components/`**: Includes reusable components, like `Footer.astro` for the footer and `FormUrlShortener.astro` for the URL shortening form.
@@ -50,11 +50,7 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 📄 Astro Docs
-
-[Documentation](https://docs.astro.build) or [Discord server](https://astro.build/chat).
-
-## Local Deployment
+## 📄Local Deployment
 
 To run the frontend in your local environment, follow these steps:
 
